@@ -1,21 +1,19 @@
 {
-  "name": "temp-project",
+  "name": "splitgg-web",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@expo/metro-runtime": "^55.0.6",
-    "expo": "~55.0.4",
-    "expo-status-bar": "~55.0.4",
-    "react": "19.2.0",
-    "react-dom": "^19.2.4",
-    "react-native": "0.83.2",
-    "react-native-web": "^0.21.2"
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest"
   },
-  "private": true
+  "devDependencies": {}
 }
